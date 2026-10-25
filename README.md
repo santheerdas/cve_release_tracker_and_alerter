@@ -23,3 +23,11 @@ Create a `.env` file in the project directory:
 TELEGRAM_BOT_TOKEN=your_bot_token_here
 TELEGRAM_CHAT_ID=your_chat_id_here
 STATE_FILE=processed_cves.json
+'
+
+**Execution**
+The script includes dynamic dependency resolution and will automatically install required packages (like requests and python-dotenv) from requirements.txt if they are missing.
+
+Execute directly via Python or schedule using cron/Kubernetes:
+
+#python3 cve_alerter.py
