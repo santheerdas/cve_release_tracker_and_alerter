@@ -26,9 +26,8 @@ STATE_FILE=processed_cves.json
 ```
 
 **Execution**
-
-The script includes dynamic dependency resolution and will automatically install required packages (like requests and python-dotenv) from requirements.txt if they are missing.
-
-Execute directly via Python or schedule using cron/Kubernetes:
-
+* The script includes dynamic dependency resolution and will automatically install required packages (like requests and python-dotenv) from requirements.txt if they are missing.
+* Execute directly via Python or schedule using cron/Kubernetes:
+```env
 #python3 cve_alerter.py
+```
